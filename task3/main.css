@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding-top: 40px;
+    padding-left: 60px;
+    background: lightgray;
+}
+
+.sup {
+    color: pink;
+}
+
+.definitions__list {
+    max-width: 600px;
+}
+
+.definitions__list-item {
+    list-style-type: none;
+    color: #d7fcff;
+    margin-bottom: 20px;
+}
+
+
+.item-list__title {
+    padding: 8px 30px;
+    background: #0d494d;
+    font-weight: 400;
+}
+
+.item-list__description {
+    padding: 8px 16px 12px;
+    background: #226068;
+    font-size: 13px;
+}
+
+.explanation__list-item {
+    margin-bottom: 10px;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.explanation__list-item-num {
+    margin-right: 10px;
+    font-weight: 600;
+}

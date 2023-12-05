@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding-top: 40px;
+    padding-left: 60px;
+    background: lightgray;
+}
+
+.seasons__title {
+    margin-bottom: 20px;
+}
+
+.seasons__block {
+    margin-left: 10px;
+}
+
+.seasons__block-header{
+    cursor: pointer;
+    margin-bottom: 4px;
+    list-style-type: none;
+}
+
+.seasons__block-arrow {
+    width: 16px;
+}
+.seasons__block.open .seasons__block-arrow {
+    transform: rotate(90deg);
+}
+
+.seasons__block-title {
+    display: inline-block;
+    font-weight: 500;
+}
+
+.seasons__list-item {
+    margin-bottom: 4px;
+}
+
+.winter .seasons__list-item {
+    list-style-image: url("../icons/winter_16.png");
+}
+.spring .seasons__list-item {
+    list-style-image: url("../icons/spring_16.png");
+}
+.summer .seasons__list-item {
+    list-style-image: url("../icons/summer_16.png");
+}
+.autumn .seasons__list-item {
+    list-style-image: url("../icons/autumn_16.png");
+}
+
+.seasons__list {
+    display: none;
+    margin-left: 40px;
+}
+.seasons__block.open .seasons__list {
+    display: block;
+}

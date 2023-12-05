@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+<div class="seasons">
+    <h3 class="seasons__title">Seasons</h3>
+    <ul class="seasons__block winter open">
+        <li class="seasons__block-header">
+            <img class="seasons__block-arrow" src="../icons/arrow.png" alt="arrow"> Winter
+        </li>
+        <ul class="seasons__list">
+            <li class="seasons__list-item">December</li>
+            <li class="seasons__list-item">January</li>
+            <li class="seasons__list-item">February</li>
+        </ul>
+    </ul>
+    <ul class="seasons__block spring">
+        <li class="seasons__block-header">
+            <img class="seasons__block-arrow" src="../icons/arrow.png" alt="arrow"> Spring
+        </li>
+        <ul class="seasons__list">
+            <li class="seasons__list-item">March</li>
+            <li class="seasons__list-item">April</li>
+            <li class="seasons__list-item">May</li>
+        </ul>
+    </ul>
+    <ul class="seasons__block summer">
+        <li class="seasons__block-header">
+            <img class="seasons__block-arrow" src="../icons/arrow.png" alt="arrow"> Summer
+        </li>
+        <ul class="seasons__list">
+            <li class="seasons__list-item">June</li>
+            <li class="seasons__list-item">July</li>
+            <li class="seasons__list-item">August</li>
+        </ul>
+    </ul>
+    <ul class="seasons__block autumn">
+        <li class="seasons__block-header">
+            <img class="seasons__block-arrow" src="../icons/arrow.png" alt="arrow"> Autumn
+        </li>
+        <ul class="seasons__list">
+            <li class="seasons__list-item">September</li>
+            <li class="seasons__list-item">October</li>
+            <li class="seasons__list-item">November</li>
+        </ul>
+    </ul>
+</div>
+
+<script>
+    let openListButton = document.querySelectorAll(".seasons__block-header");
+
+    openListButton.forEach((item) => {
+        item.addEventListener("click", () => {
+            item.closest(".seasons__block").classList.toggle("open");
+        })
+    })
+</script>
+
+</body>
+</html>
